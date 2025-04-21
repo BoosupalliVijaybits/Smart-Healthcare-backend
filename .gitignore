@@ -1,0 +1,32 @@
+# IntelliJ IDEA settings
+*.iml
+
+# Target and build directories
+/backend-1/target/
+/out/
+/build/
+
+# Logs and temp files
+*.log
+*.tmp
+
+# Java binaries
+*.class
+*.jar
+*.war
+*.ear
+
+# Maven and Gradle
+/.mvn/
+/.gradle/
+/node_modules/
+/.env
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+/uploads/
+/target/
+/.idea/
+/backend/target/
+/.idea/
