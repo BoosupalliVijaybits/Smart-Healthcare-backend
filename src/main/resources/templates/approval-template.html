@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Doctor Approval</title>
+    <style>
+        .container {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .header {
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            font-size: 24px;
+        }
+        .content {
+            margin: 20px;
+            font-size: 18px;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">Doctor Registration Approved</div>
+    <div class="content">
+        <p>Hello <strong th:text="${name}">Doctor</strong>,</p>
+        <p>Congratulations! Your registration has been approved by the Admin.</p>
+        <p><a href="http://localhost:3000/login">Click here to login</a></p>
+    </div>
+    <div class="footer">Regards,<br/>Smart Health Care Team</div>
+</div>
+</body>
+</html>

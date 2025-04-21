@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <style>
+        body { font-family: Arial; }
+        .header { background: #4CAF50; color: white; padding: 10px; }
+        .content { margin-top: 20px; }
+    </style>
+</head>
+<body>
+<div class="header">Appointment Booked</div>
+<div class="content">
+    <p>Hi <strong th:text="${patientName}">Patient Name</strong>,</p>
+    <p>Your appointment with Dr. <strong th:text="${doctorName}"></strong> on <strong th:text="${appointmentDate}"></strong> at <strong th:text="${appointmentTime}"></strong> has been confirmed.</p>
+</div>
+</body>
+</html>

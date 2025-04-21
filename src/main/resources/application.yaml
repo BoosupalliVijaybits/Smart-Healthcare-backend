@@ -1,0 +1,41 @@
+spring:
+  web:
+    resources:
+      static-locations: classpath:/static/
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: bnjreddy928@gmail.com
+    password: qdbx avyc xpqz ksmd
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.starttls.enable: true
+  application:
+    name: smart-healthcare-backend
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/healthcare_db_testing?createDatabaseIfNotExist=true
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  server:
+    servlet:
+      multipart:
+        max-file-size: 10MB
+        max-request-size: 15MB
+      session:
+        timeout: 60m
+        cookie:
+          http-only: true
+debug: false
+
+
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG

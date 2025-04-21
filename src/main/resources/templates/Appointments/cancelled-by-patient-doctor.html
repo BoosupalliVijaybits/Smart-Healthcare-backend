@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Patient Cancelled Appointment</title>
+</head>
+<body>
+<div style="font-family: Arial, sans-serif; padding: 20px;">
+  <h2 style="color: orange;">Appointment Cancelled by Patient</h2>
+  <p>Dear Dr. <strong th:text="${doctorName}">Doctor</strong>,</p>
+  <p>Your patient <strong th:text="${patientName}">Patient</strong> has cancelled the appointment scheduled on
+    <strong th:text="${appointmentDate}">Date</strong> at
+    <strong th:text="${appointmentTime}">Time</strong>.</p>
+  <p>You may now use this slot for other appointments.</p>
+</div>
+</body>
+</html>

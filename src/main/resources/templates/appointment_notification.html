@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Appointment Reminder</title>
+    <style>
+        .container {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f2f4f8;
+            color: #333;
+        }
+
+        .email-box {
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: 0 auto;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            border-radius: 6px 6px 0 0;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .content {
+            padding: 20px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #777;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="email-box">
+        <div class="header">
+            📅 Appointment Reminder
+        </div>
+        <div class="content">
+            <p>Dear <strong><span th:text="${patientName}"></span></strong>,</p>
+
+            <p>This is a friendly reminder about your upcoming appointment:</p>
+
+            <ul>
+                <li><strong>Time:</strong> <span th:text="${appointmentTime}"></span></li>
+                <li><strong>Doctor:</strong> Dr. <span th:text="${doctorName}"></span></li>
+                <li><strong>Clinic:</strong> <span th:text="${clinicName}"></span></li>
+            </ul>
+
+            <p>Please make sure to arrive a few minutes early.</p>
+
+            <p>If you have any questions or need to reschedule, feel free to contact us.</p>
+
+            <p>We look forward to seeing you!</p>
+        </div>
+        <div class="footer">
+            This is an automated message from the Smart Healthcare System. Please do not reply.
+        </div>
+    </div>
+</div>
+</body>
+</html>

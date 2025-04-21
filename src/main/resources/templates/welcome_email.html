@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome Email</title>
+    <style>
+        .container {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            font-size: 24px;
+        }
+        .content {
+            margin: 20px;
+            font-size: 18px;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">Welcome to our Smart Health Care Service</div>
+    <div class="content">
+        <p>Hello <strong th:text="${username}"></strong>,</p>
+        <p>Thank you for registering. We’re excited to have you on board!</p>
+        <p>Your registration was successful, and you can now enjoy our platform.</p>
+        <p><a href="http://localhost:3000/login">Click Here to Login</a></p>
+    </div>
+    <div class="footer">Best Regards, <br> The Smart Health Care Team</div>
+</div>
+</body>
+</html>

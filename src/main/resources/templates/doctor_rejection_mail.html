@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Doctor Registration Rejected</title>
+  <style>
+    .container {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 20px;
+    }
+    .header {
+        background-color: #dc3545;
+        color: white;
+        padding: 10px;
+        font-size: 24px;
+    }
+    .content {
+        margin: 20px;
+        font-size: 18px;
+    }
+    .footer {
+        margin-top: 20px;
+        font-size: 14px;
+        color: gray;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="header">Doctor Registration Rejected</div>
+  <div class="content">
+    <p>Hello <strong th:text="${username}"></strong>,</p>
+    <p>We regret to inform you that your registration request has been <strong>rejected</strong> by the administrator.</p>
+    <p>If you believe this is a mistake, please contact our support team : smarthealth@support.com</p>
+  </div>
+  <div class="footer">Best Regards,<br>The Smart Health Care Team</div>
+</div>
+</body>
+</html>
