@@ -12,7 +12,7 @@ public class SmartHealthcareBackendApplication {
     private static final Logger LOGGER = LoggerFactory.getLogger(SmartHealthcareBackendApplication.class);
 
     public static void main(String[] args) {
-        LOGGER.info("Starting SmartHealthcareBackendApplication  ****");
+        LOGGER.info("**** Starting SmartHealthcareBackendApplication  ****");
         SpringApplication.run(SmartHealthcareBackendApplication.class, args);
     }
 
